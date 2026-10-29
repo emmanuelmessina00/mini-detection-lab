@@ -50,7 +50,7 @@ def main():
 
     # 6. Visualizzazione finale
     print("[*] Invio campioni visivi di test su WandB...")
-    log_prediction_samples(model, test_dataset, device, num_samples=4, score_thresh=0.6)
+    log_prediction_samples(model, test_dataset, device, num_samples=4, score_threshold=0.6)
 
     wandb.finish()
     print("[*] Sessione completata!")
